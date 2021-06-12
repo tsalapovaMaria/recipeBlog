@@ -23,10 +23,9 @@ body, p {
 
 .recipe-description-text {
     position: relative;
-    padding-right: 25px;
+    padding-left: 25px;
 
     top: -19px;
-    left: 25px;
 
     font-family: Montserrat;
     font-weight: 600;
@@ -111,6 +110,7 @@ body, p {
     margin-bottom: 40px;
 }
 .instruction-description {
+    margin-left: 15px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -129,20 +129,21 @@ body, p {
     flex-direction: column;
 }
 
+.ingredients > label {
+    display: flex;
+}
 .ingredients > label:not(:first-of-type) {
     margin-top: 10px;
 }
+
 input[type="checkbox"]{
-    position: absolute;
+    position: relative;
     margin-top: 7px;
 
     transform: scale(1.5);
 }
 .ingredients-description {
-    width: 320px;
-
-    position: relative;
-    left: 30px;
+    margin-left: 10px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -179,7 +180,9 @@ input[type="checkbox"]{
 .instruction-container > div[class="row"] {
     margin-top: 10px;
 }
-
+.instruction-container > div {
+    display: flex;
+}
 
 .copyright {
     position: absolute;
