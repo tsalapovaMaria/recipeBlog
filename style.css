@@ -1,9 +1,13 @@
+body, p {
+    margin: 0;
+}
 .main-container {
     padding: 30px 15px;
 }
 .main-title, 
 .instruction-title,
 .ingredients-title {
+    margin-top: 0;
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: bold;
@@ -13,8 +17,17 @@
     margin-top: 10px;
     font-size: 18px;
 }
+.instruction-title {
+    margin-bottom: 28px;
+}
 
 .recipe-description-text {
+    position: relative;
+    padding-right: 25px;
+
+    top: -19px;
+    left: 25px;
+
     font-family: Montserrat;
     font-weight: 600;
     font-size: 12px;
@@ -32,8 +45,18 @@
     margin-bottom: 0;
 }
 
-.time-container {    
-    padding: 0 15px;
+.time-container {
+    margin-top: 20px;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+}
+.prep-time-container,
+.cook-time-container,
+.total-time-container {
+    display: flex;
 }
 .clock {
     margin-right: 6px;
@@ -102,17 +125,34 @@
     padding: 0;
 }
 .ingredients {
-    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-input[type="checkbox"].col-1{
+.ingredients > label:not(:first-of-type) {
+    margin-top: 10px;
+}
+input[type="checkbox"]{
+    position: absolute;
     margin-top: 7px;
-    padding: 0 15px;
+
     transform: scale(1.5);
 }
-span.ingredients-description {
-    padding: 0;
-    padding-left: 5px;
+.ingredients-description {
+    width: 320px;
+
+    position: relative;
+    left: 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.topping-suggestions {
+    font-style: italic;
 }
 
 .serial-num {
@@ -138,4 +178,34 @@ span.ingredients-description {
 
 .instruction-container > div[class="row"] {
     margin-top: 10px;
+}
+
+
+.copyright {
+    position: absolute;
+    left: 50%;
+
+    margin-top: 150px;
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+
+.created-by {
+    position: relative;
+    left: -50%;
+    margin: 0;
+
+    font-size: 14px;
+    font-family: 'Montserrat';
+
+    color: #BDBDBD;
+}
+
+.created-by .username {
+    font-weight: 700;
+}
+
+@media all and (max-width: 992px){
+
 }
