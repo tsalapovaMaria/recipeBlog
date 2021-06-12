@@ -14,7 +14,7 @@ body, p {
     font-size: 24px;
 }
 .ingredients-title {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 18px;
 }
 .instruction-title {
@@ -177,8 +177,8 @@ input[type="checkbox"]{
     line-height: 32px;
 }
 
-.instruction-container > div[class="row"] {
-    margin-top: 10px;
+.instruction-container > div:not(:first-of-type){
+    margin-top: 30px;
 }
 .instruction-container > div {
     display: flex;
@@ -209,6 +209,78 @@ input[type="checkbox"]{
     font-weight: 700;
 }
 
-@media all and (max-width: 992px){
+@media all and (min-width: 992px){
+    .main-container {
+        padding: 50px 230px;
+    }
+    .main-title {
+        font-size: 48px;
+    }
+    .recipe-description-text {
+        max-width: 600px;
+    }
+    .ingredients-container,
+    .instruction-container {
+        width: 320px;
+    }
+    .ingredients-title {
+        margin-top: 48px;
+    }
+    .ingredients-title,
+    .instruction-title {
+        font-size: 24px;
+    }
 
+    .cake-result-img {        
+        position: relative;
+    }
+    .time-serving-information {
+        position: absolute;
+        right: 230px;
+
+        margin-top: 30px;
+        padding: 50px 40px;
+
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+    .time-container {
+        flex-direction: column;        
+    }
+    .time-container > div:not(:first-of-type) {
+        margin-top: 40px;        
+    }
+    .yelds-serving {
+        margin-top: 0;
+    }
+    .yelds, 
+    .prep-time-title, 
+    .total-time-title,
+    .cook-time-title {
+        font-size: 10px;
+    }
+    .servings,
+    .total-time,
+    .prep-time,
+    .cook-time {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .clock {
+        margin-right: 15px;
+        width: 24px;
+        height: 24px;
+    }
+}
+@media all and (min-width: 1050px){
+    .ingredients-container,
+    .instruction-container {
+        width: 360px;
+    }
+}
+@media all and (min-width: 1280px){
+    .ingredients-container,
+    .instruction-container {
+        width: 560px;
+    }
 }
