@@ -51,9 +51,9 @@
         <div class="row time-container">
             <div class="col-4 prep-time-container">
                 <div class="row">
-                    <svg 
-                        fill="none" height="14" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="clock" fill="none" height="14" stroke="#000" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"
+                        xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" />
                         <polyline points="12 6 12 12 15 15" />
                     </svg>
@@ -67,8 +67,9 @@
 
             <div class="col-4 cook-time-container">
                 <div class="row">
-                    <svg fill="none" height="14" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="clock" fill="none" height="14" stroke="#000" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"
+                        xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" />
                         <polyline points="12 6 12 12 15 15" />
                     </svg>
@@ -82,8 +83,9 @@
 
             <div class="col-4 total-time-container">
                 <div class="row">
-                    <svg fill="none" height="14" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="clock" fill="none" height="14" stroke="#000" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"
+                        xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" />
                         <polyline points="12 6 12 12 15 15" />
                     </svg>
@@ -97,65 +99,87 @@
         </div>
 
         <div class="ingredients-container">
-            <h3>Ingredients</h3>
+            <h3 class="ingredients-title">Ingredients</h3>
 
             <div class="graham-cracker-ingredients">
                 <h4>Craham cracker Crust</h4>
-                <label>
-                    <input type="checkbox">
-                    1 and 1/2 cups (150g)
-                    <span class="ingredient">graham cracker crumbs</span>
-                    (about 10 full sheet graham crackers)
-                </label>
-                <label>
-                    <input type="checkbox">
-                    5 Tablespoons (70g) <span class="ingredient">unsalted butter</span>, melted
-                </label>
-                <label>
-                    <input type="checkbox">
-                    1/4 cup (50g) <span class="ingredient">granulated sugar</span>
-                </label>
+                <div class="ingredients">
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11"> 1 and 1/2 cups (150g)
+                            <span class="ingredient">graham cracker crumbs</span>
+                            (about 10 full sheet graham crackers)
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">5 Tablespoons (70g) <span class="ingredient">unsalted butter</span>, melted</span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">1/4 cup (50g) <span class="ingredient">granulated sugar</span>
+                        </span>
+                    </label>
+                </div>
             </div>
 
             <div class="cheesecake-ingredients">
                 <h4>Cheesecake</h4>
-                <label>
-                    <input type="checkbox">
-                    four 8-ounce blocks (904g) full-fat
-                    <span class="ingredient">cream cheese</span>,
-                    softened to room temperature
-                </label>
-                <label>
-                    <input type="checkbox">
-                    1 cup (200g) <span class="ingredient">granulated sugar</span>
-                </label>
-                <label>
-                    <input type="checkbox">
-                    1 cup (240g) full-fat
-                    <span class="ingredient">sour cream</span>, at room temperature
-                </label>
-                <label>
-                    <input type="checkbox">
-                    1 teaspoon <span class="ingredient">pure vanilla extract</span>
-                </label>
-                <label>
-                    <input type="checkbox">
-                    2 teaspoons <span class="ingredient">fresh lemon juice</span>
-                    (optional, but recommended)
-                </label>
-                <label>
-                    <input type="checkbox">
-                    3 large <span class="ingredient">eggs</span>, at room temperature
-                </label>
-                <label>
-                    <input type="checkbox">
-                    topping suggestions:
-                    <span class="topping-suggestions">salted caramel, lemon curd,
-                        strawberry topping, chocolate ganache, red wine
-                        chocolate ganache, fresh fruit, whipped cream,
-                        or raspberry sauce </span>
-                    (recipe in notes)
-                </label>
+                <div class="ingredients">
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            four 8-ounce blocks (904g) full-fat
+                            <span class="ingredient">cream cheese</span>,
+                            softened to room temperature
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            1 cup (200g) 
+                            <span class="ingredient">granulated sugar</span>
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            1 cup (240g) full-fat
+                            <span class="ingredient">sour cream</span>, at room temperature
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            1 teaspoon 
+                            <span class="ingredient">pure vanilla extract</span>
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            2 teaspoons <span class="ingredient">fresh lemon juice</span>
+                            (optional, but recommended)
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            3 large <span class="ingredient">eggs</span>, at room temperature
+                        </span>
+                    </label>
+                    <label class="row">
+                        <input class="col-1" type="checkbox">
+                        <span class="ingredients-description col-11">
+                            topping suggestions:
+                            <span class="topping-suggestions">salted caramel, lemon curd,
+                                strawberry topping, chocolate ganache, red wine
+                                chocolate ganache, fresh fruit, whipped cream,
+                                or raspberry sauce </span>
+                            (recipe in notes)
+                        </span>
+                    </label>
+                </div>            
             </div>
         </div>
 
@@ -163,15 +187,15 @@
             <h2 class="instruction-title">Instruction</h2>
 
             <div class="row">
-                <div class="col-2 serial-num">1</div>
+                <div class="col-2 serial-num"><div>1</div></div>
                 <div class="col-10 instruction-description">Adjust the oven rack
                     to the lower-middle position and
                     preheat oven to 350°F (177°C).</div>
             </div>
             <div class="row">
-                <div class="col-2 serial-num">2</div>
+                <div class="col-2 serial-num"><div>2</div></div>
                 <div class="col-10 instruction-description">
-                    <span class="instruction-title">Make the crust: </span>
+                    <span class="instruction-bold">Make the crust: </span>
                     Using a food processor, pulse the graham
                     crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined.
                     (You
@@ -186,9 +210,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 serial-num">3</div>
+                <div class="col-2 serial-num"><div>3</div></div>
                 <div class="col-10 instruction-description">
-                    <span class="instruction-title">Make the filling: </span>
+                    <span class="instruction-bold">Make the filling: </span>
                     Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese
                     and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and
                     creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully
@@ -200,9 +224,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 serial-num">4</div>
+                <div class="col-2 serial-num"><div>4</div></div>
                 <div class="col-10 instruction-description">
-                    <span class="instruction-title">Prepare the simple water bath (see note) </span>
+                    <span class="instruction-bold">Prepare the simple water bath (see note) </span>
                     Boil a pot of water. You need 1 inch of water in your roasting
                     pan for the water bath, so make sure you boil enough. I use an entire kettle of hot water. As the
                     water
@@ -215,7 +239,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 serial-num">5</div>
+                <div class="col-2 serial-num"><div>5</div></div>
                 <div class="col-10 instruction-description">
                     Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of
                     the
@@ -228,7 +252,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 serial-num">6</div>
+                <div class="col-2 serial-num"><div>6</div></div>
                 <div class="col-10 instruction-description">
                     Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the
                     rim.
@@ -238,7 +262,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 serial-num">7</div>
+                <div class="col-2 serial-num"><div>7</div></div>
                 <div class="col-10 instruction-description">
                     Serve cheesecake with desired toppings.
                     Cover and store leftover cheesecake in the refrigerator for up
