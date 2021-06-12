@@ -9,6 +9,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -40,48 +43,55 @@
             <img src="/recipe-page-master/photo1.png" alt="cake photo">
         </div>
 
-        <div class="yelds-serving">
-            <p class="yelds">Yelds</p>
-            <p class="servings">12 servings</p>
+        <div class="col-12 yelds-serving">
+            <p class="row yelds">Yelds</p>
+            <p class="row servings">12 servings</p>
         </div>
 
-        <div class="time-container">
-            <div class="prep-time">
-                <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 15 15" />
-                </svg>
+        <div class="row time-container">
+            <div class="col-4 prep-time-container">
+                <div class="row">
+                    <svg 
+                        fill="none" height="14" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 15 15" />
+                    </svg>
 
-                <div>
-                    <p>Prep time</p>
-                    <p>45 minutes</p>
+                    <div>
+                        <p class="prep-time-title">Prep time</p>
+                        <p class="prep-time">45 minutes</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="cook-time">
-                <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 15 15" />
-                </svg>
+            <div class="col-4 cook-time-container">
+                <div class="row">
+                    <svg fill="none" height="14" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 15 15" />
+                    </svg>
 
-                <div>
-                    <p>Cook time</p>
-                    <p>1 hour</p>
+                    <div>
+                        <p class="cook-time-title">Cook time</p>
+                        <p class="cook-time">1 hour</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="total-time">
-                <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 15 15" />
-                </svg>
+            <div class="col-4 total-time-container">
+                <div class="row">
+                    <svg fill="none" height="14" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 15 15" />
+                    </svg>
 
-                <div>
-                    <p>Total time</p>
-                    <p>7.75 hours</p>
+                    <div>
+                        <p class="total-time-title">Total time</p>
+                        <p class="total-time">7.75 hours</p>
+                    </div>
                 </div>
             </div>
         </div>

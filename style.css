@@ -19,3 +19,45 @@
     max-width: 100%;
     height: auto;
 }
+
+.yelds-serving {
+    margin-top: 24px;
+}
+.yelds {
+    margin-bottom: 0;
+}
+
+.time-container{    
+    padding: 0 15px;
+}
+
+.yelds, 
+.prep-time-title, 
+.total-time-title,
+.cook-time-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+
+    line-height: 10px;
+    text-transform: uppercase;
+
+    color: #BDBDBD;
+}
+
+
+.servings {
+    color: #F2994A;
+}
+
+.servings,
+.total-time,
+.prep-time,
+.cook-time {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+}
