@@ -1,0 +1,21 @@
+.main-container {
+    padding: 30px 15px;
+}
+.main-title, 
+.instruction-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.recipe-description-text {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.cake-result-img img {
+    max-width: 100%;
+    height: auto;
+}
